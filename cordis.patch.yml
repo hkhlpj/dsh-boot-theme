@@ -1,0 +1,7 @@
+# dsh-boot-theme — bundle patch layer
+#
+# Mounts 开机美化 as a Cordis loader entry. Installed with:
+#   dsh plugin --profile desktop add link:<this directory>
+- insert:
+    - id: boot-theme
+      name: dsh-boot-theme

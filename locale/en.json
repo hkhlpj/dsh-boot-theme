@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Boot Theme",
+    "description": "Plays a configurable cold-start video with audio over DeepSeek Harness, then transitions into the main UI. Configure and preview it from the right sidebar."
+  }
+}

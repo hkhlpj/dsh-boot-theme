@@ -1,0 +1,56 @@
+{
+  "name": "dsh-boot-theme",
+  "version": "1.0.0",
+  "private": true,
+  "description": "开机美化: plays a configurable cold-start video with audio over DeepSeek Harness, then transitions into the app.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "boot-animation",
+    "splash-screen",
+    "startup-video",
+    "cordis"
+  ],
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "boot-runtime.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md"
+  ],
+  "engines": {
+    "dsh": ">=0.2.0-rc.1"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": false,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar-right"
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hkhlpj/dsh-boot-theme.git"
+  },
+  "homepage": "https://github.com/hkhlpj/dsh-boot-theme#readme",
+  "bugs": {
+    "url": "https://github.com/hkhlpj/dsh-boot-theme/issues"
+  },
+  "author": "hkhlpj",
+  "license": "MIT"
+}
